@@ -24,11 +24,11 @@ function Widgets() {
           screenName="Y_Tech__"
           options={{ height: 400 }}
         />
+        <TwitterShareButton
+          url={"https://twitter.com/Y_Tech__"}
+          options={{ text: "#react", via: "Y_Tech__" }}
+        />
       </div>
-      <TwitterShareButton
-        url={"https://twitter.com/Y_Tech__"}
-        options={{ text: "#react", via: "Y_Tech__" }}
-      />
     </div>
   );
 }
