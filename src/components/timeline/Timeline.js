@@ -1,5 +1,6 @@
 import React from "react";
 import "./Timeline.css";
+import TweetBox from "./TweetBox.js";
 
 function Timeline() {
   return (
@@ -10,9 +11,7 @@ function Timeline() {
       </div>
 
       {/* TweetBox */}
-      <div className="Tweetbox">
-        <h2>box</h2>
-      </div>
+      <TweetBox />
 
       {/* Post */}
       {/* Post */}
