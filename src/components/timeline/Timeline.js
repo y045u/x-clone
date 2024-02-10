@@ -1,6 +1,7 @@
 import React from "react";
 import "./Timeline.css";
 import TweetBox from "./TweetBox.js";
+import Post from "./Post.js";
 
 function Timeline() {
   return (
@@ -14,6 +15,8 @@ function Timeline() {
       <TweetBox />
 
       {/* Post */}
+      <Post />
+
       {/* Post */}
       {/* Post */}
       {/* Post */}
@@ -23,53 +26,6 @@ function Timeline() {
       {/* Post */}
       {/* Post */}
       {/* Post */}
-      <div className="post">
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-        <h2>pppppp</h2>
-      </div>
     </div>
   );
 }
