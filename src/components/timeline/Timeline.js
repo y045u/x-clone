@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Timeline.css";
 import TweetBox from "./TweetBox.js";
 import Post from "./Post.js";
+import db from "../../firebase.js";
+import { collection, getDocs } from "firebase/firestore";
 
 function Timeline() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const postData = collection(db, "posts");
+    getDocs(postData).then((querySnapshot) => {
+      console.log(querySnapshot.docs.map((doc) => doc.data()));
+      setPosts(querySnapshot.docs.map((doc) => doc.data()));
+    });
+  }, []);
+
   return (
     <div className="timeline">
       {/* Header */}
@@ -15,24 +27,17 @@ function Timeline() {
       <TweetBox />
 
       {/* Post */}
-      <Post
-        displayName="ふぁい"
-        username="y045u"
-        verified={true}
-        text="初めてのツイート"
-        avatar="https://pbs.twimg.com/profile_images/1476938674612805637/Z9-fGmey_400x400.jpg"
-        image="https://source.unsplash.com/random"
-      />
-
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
+      {posts.map((post) => (
+        <Post
+          key={post.text}
+          displayName={post.displayName}
+          username={post.username}
+          verified={post.verified}
+          text={post.text}
+          avatar={post.avatar}
+          image={post.image}
+        />
+      ))}
     </div>
   );
 }
