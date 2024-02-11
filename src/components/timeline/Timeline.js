@@ -16,7 +16,7 @@ function Timeline() {
 
       {/* Post */}
       <Post
-        displayName="プログラミングチュートリアル"
+        displayName="ふぁい"
         username="y045u"
         verified={true}
         text="初めてのツイート"

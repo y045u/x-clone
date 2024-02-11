@@ -35,7 +35,7 @@ p {
 }
 
 .post--badge {
-  font-size: 12px;
+  font-size: 14px !important;
   color: var(--x-color);
   padding-left: 2px;
   padding-right: 5px;
